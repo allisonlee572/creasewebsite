@@ -1,0 +1,45 @@
+.page {
+	width: 100vw;
+	height: 100vh;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+#crease {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	#title {
+		width: 85vw;
+		max-width: 750px;
+	}
+
+	#release {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
+
+		img[alt="steam"] {
+			height: 2.5rem;
+		}
+	}
+}
+
+#contact {
+	a {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.logo {
+		height: 3rem;
+	}
+}
