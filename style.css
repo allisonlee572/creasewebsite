@@ -1,22 +1,111 @@
+@font-face {
+	font-family: 'Dokdo';
+	src: url('/font/Dokdo-Regular.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HankenGrotesk';
+	src: url('/font/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
+}
+
 .page {
-	width: 100vw;
+	padding-top: 3rem;
+	width: 100%;
 	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {
+	background-color: #02031E;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* overflow: hidden; */
+}
+
+* {
+	color: whitesmoke;
+	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+	font-family: 'Dokdo', Arial, Helvetica, sans-serif;
 }
 
 nav {
 	position: fixed;
+	z-index: 100;
 	left: 0;
 	top: 0;
+	width: 100%;
+	height: 3rem;
+
+	div.bg {
+		z-index: 95;
+		width: 100%;
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: rgba(194, 96, 111, 0.25);
+		}
+
+		img {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+	div.links {
+		position: relative;
+		z-index: 100;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		a {
+			font-size: 1.5rem;
+			width: 100%;
+			height: 100%;
+			display: grid;
+			place-content: center;
+			color: #02031E;
+			text-decoration: none;
+		
+			&:hover {
+				background: rgba(194, 96, 111, 0.118);
+			}
+		}
+	}
 }
 
 #crease {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
 	#title {
-		width: 85vw;
+		width: 75vw;
 		max-width: 750px;
+		margin: 7rem 0;
 	}
 
 	#release {
@@ -29,9 +118,38 @@ nav {
 			height: 2.5rem;
 		}
 	}
+
+	img.curtain {
+		position: absolute;
+		width: 20%;
+		min-width: 150px;
+		top: 0;
+		z-index: -10;
+
+		&.left {
+			left: 0;
+		}
+
+		&.right {
+			right: 0;
+		}
+	}
+}
+
+#pitch {
+	background-color: #7486ce;
+}
+
+#pre-pro {
+	background-image: url("img/DarkSkyBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 #contact {
+	background-color: #fe942d;
+
 	a {
 		display: flex;
 		flex-direction: row;
