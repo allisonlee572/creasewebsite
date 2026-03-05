@@ -30,7 +30,6 @@ body {
 }
 
 * {
-	color: whitesmoke;
 	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
 	animation-duration: 0.5s;
 	transition-duration: 0.5s;
@@ -95,6 +94,10 @@ nav {
 			&:hover {
 				background: rgba(194, 96, 111, 0.118);
 			}
+
+			&.active {
+				color: rgb(239, 56, 83);
+			}
 		}
 	}
 }
@@ -103,11 +106,12 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
 
 	#title {
 		width: 75vw;
-		max-width: 750px;
-		margin: 7rem 0;
+		max-width: 450px;
+		margin-top: calc(5vh + 1vw);
 	}
 
 	#release {
@@ -117,8 +121,68 @@ nav {
 		gap: 0.5rem;
 
 		img[alt="steam"] {
-			height: 2.5rem;
+			height: 2rem;
 		}
+
+		span {
+			color: rgb(239, 56, 83);
+			font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+			font-size: 1.2rem;
+		}
+	}
+
+	&>div {
+		max-width: 75%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div#tagline {
+		color: rgb(246, 109, 130);
+		font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	div#release,
+	div#about-game {
+		background:
+			linear-gradient(rgba(239, 190, 198, 0.435), rgba(238, 218, 221, 0.331)),
+			url("img/paper1.jpg") center/cover no-repeat;
+
+		padding: 0.5rem 1rem;
+	}
+
+	#demo {
+		position: relative;
+		width: 100%;
+		max-width: 650px;
+		aspect-ratio: 16/9;
+		overflow: hidden;
+		border: 1px solid red;
+		margin: 1rem;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	div.game-info {
+		padding-bottom: 3rem;
+		gap: 2rem;
+
+		#about-game {
+			transform: rotate(1deg);
+		}
+	}
+
+	div#release {
+		transform: rotate(-2deg);
 	}
 
 	img.curtain {
@@ -196,6 +260,7 @@ nav {
 			&:nth-child(1) {
 				transform: translate(-15px, -5px) rotate(-5deg);
 			}
+
 			&:nth-child(2) {
 				transform: translateX(20px) rotate(3deg);
 			}
