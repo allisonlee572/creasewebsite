@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'Dokdo';
-	src: url('/font/Dokdo-Regular.ttf') format('truetype');
+	font-family: "Dokdo";
+	src: url("/font/Dokdo-Regular.ttf") format("truetype");
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'HankenGrotesk';
-	src: url('/font/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+	font-family: "HankenGrotesk";
+	src: url("/font/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
 	font-weight: 100 900;
 	font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 * {
-	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+	font-family: "HankenGrotesk", Arial, Helvetica, sans-serif;
 	animation-duration: 0.5s;
 	transition-duration: 0.5s;
 }
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 a {
-	font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+	font-family: "Dokdo", Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -126,7 +126,7 @@ nav {
 
 		span {
 			color: rgb(239, 56, 83);
-			font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+			font-family: "Dokdo", Arial, Helvetica, sans-serif;
 			font-size: 1.2rem;
 		}
 	}
@@ -140,7 +140,7 @@ nav {
 
 	div#tagline {
 		color: rgb(246, 109, 130);
-		font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+		font-family: "Dokdo", Arial, Helvetica, sans-serif;
 		font-size: 1.2rem;
 		text-align: center;
 	}
