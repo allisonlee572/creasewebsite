@@ -1,12 +1,12 @@
 @font-face {
-	font-family: "Dokdo";
-	src: url("./font/Dokdo-Regular.ttf") format("truetype");
+	font-family: 'Dokdo';
+	src: url('./font/Dokdo-Regular.ttf') format('truetype');
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "HankenGrotesk";
-	src: url("./font/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+	font-family: 'HankenGrotesk';
+	src: url('./font/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 	font-weight: 100 900;
 	font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 * {
-	font-family: "HankenGrotesk", Arial, Helvetica, sans-serif;
+	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
 	animation-duration: 0.5s;
 	transition-duration: 0.5s;
 }
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 a {
-	font-family: "Dokdo", Arial, Helvetica, sans-serif;
+	font-family: 'Dokdo', Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -60,7 +60,7 @@ nav {
 		height: 100%;
 
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			inset: 0;
 			background: rgba(246, 109, 129, 0.25);
@@ -120,13 +120,13 @@ nav {
 		align-items: center;
 		gap: 0.5rem;
 
-		img[alt="steam"] {
+		img[alt='steam'] {
 			height: 2rem;
 		}
 
 		span {
 			color: rgb(239, 56, 83);
-			font-family: "Dokdo", Arial, Helvetica, sans-serif;
+			font-family: 'Dokdo', Arial, Helvetica, sans-serif;
 			font-size: 1.2rem;
 		}
 	}
@@ -140,7 +140,7 @@ nav {
 
 	div#tagline {
 		color: rgb(246, 109, 130);
-		font-family: "Dokdo", Arial, Helvetica, sans-serif;
+		font-family: 'Dokdo', Arial, Helvetica, sans-serif;
 		font-size: 1.2rem;
 		text-align: center;
 	}
@@ -149,7 +149,7 @@ nav {
 	div#about-game {
 		background:
 			linear-gradient(rgba(239, 190, 198, 0.435), rgba(238, 218, 221, 0.331)),
-			url("img/paper1.jpg") center/cover no-repeat;
+			url('img/paper1.jpg') center/cover no-repeat;
 
 		padding: 0.5rem 1rem;
 	}
@@ -208,14 +208,14 @@ nav {
 
 #pre-pro {
 	background:
-		url("img/DarkSkyBackground.png") center/cover no-repeat;
+		url('img/DarkSkyBackground.png') center/cover no-repeat;
 }
 
 #contact {
 	/* background-color: #fe942d; */
 	background:
 		linear-gradient(rgba(230, 150, 162, 0.355), rgba(255, 182, 193, 0.25)),
-		url("img/paper2.png") center/cover no-repeat;
+		url('img/paper2.png') center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -252,7 +252,7 @@ nav {
 		a {
 			background:
 				linear-gradient(rgba(230, 150, 162, 0.355), rgba(255, 182, 193, 0.25)),
-				url("img/paper1.jpg") center/cover no-repeat;
+				url('img/paper1.jpg') center/cover no-repeat;
 
 			padding: 1rem;
 			box-shadow: 10px 10px 5px #02031e49;
