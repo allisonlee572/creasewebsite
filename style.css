@@ -232,7 +232,7 @@ nav {
 
 	h2 {
 		font-size: 3rem;
-		text-decoration: dashed underline #b03407;
+		text-decoration: dashed underline #0d549a;
 		text-decoration-thickness: 4px;
 	}
 
@@ -278,6 +278,6 @@ nav {
 	}
 
 	#copyright {
-		color: #b03407;
+		color: #0d549a;
 	}
 }
