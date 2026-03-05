@@ -32,6 +32,8 @@ body {
 * {
 	color: whitesmoke;
 	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+	animation-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 h1,
@@ -62,7 +64,7 @@ nav {
 			content: "";
 			position: absolute;
 			inset: 0;
-			background: rgba(194, 96, 111, 0.25);
+			background: rgba(246, 109, 129, 0.25);
 		}
 
 		img {
@@ -89,7 +91,7 @@ nav {
 			place-content: center;
 			color: #02031E;
 			text-decoration: none;
-		
+
 			&:hover {
 				background: rgba(194, 96, 111, 0.118);
 			}
@@ -141,14 +143,34 @@ nav {
 }
 
 #pre-pro {
-	background-image: url("img/DarkSkyBackground.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background:
+		url("img/DarkSkyBackground.png") center/cover no-repeat;
 }
 
 #contact {
-	background-color: #fe942d;
+	/* background-color: #fe942d; */
+	background:
+		linear-gradient(rgba(230, 150, 162, 0.355), rgba(255, 182, 193, 0.25)),
+		url("img/paper2.png") center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-top: 15rem;
+	padding-bottom: 7rem;
+	justify-content: space-between;
+
+
+	* {
+		color: #02031E;
+		font-size: larger;
+	}
+
+	h2 {
+		font-size: 3rem;
+		text-decoration: dashed underline #b03407;
+		text-decoration-thickness: 4px;
+	}
 
 	a {
 		display: flex;
@@ -157,7 +179,40 @@ nav {
 		gap: 1rem;
 	}
 
-	.logo {
-		height: 3rem;
+	div.links {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-top: -10rem;
+
+		a {
+			background:
+				linear-gradient(rgba(230, 150, 162, 0.355), rgba(255, 182, 193, 0.25)),
+				url("img/paper1.jpg") center/cover no-repeat;
+
+			padding: 1rem;
+			box-shadow: 10px 10px 5px #02031e49;
+
+			&:nth-child(1) {
+				transform: translate(-15px, -5px) rotate(-5deg);
+			}
+			&:nth-child(2) {
+				transform: translateX(20px) rotate(3deg);
+			}
+
+			&:hover {
+				transform: translateY(-5px) scale(1.2);
+				filter: brightness(1.1);
+				box-shadow: 15px 25px 5px #02031e30;
+			}
+		}
+
+		.logo {
+			height: 3rem;
+		}
+	}
+
+	#copyright {
+		color: #b03407;
 	}
 }
