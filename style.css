@@ -5,8 +5,8 @@
 }
 
 @font-face {
-	font-family: 'HankenGrotesk';
-	src: url('./font/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+	font-family: 'PatrickHand';
+	src: url('./font/PatrickHand-Regular.ttf') format('truetype');
 	font-weight: 100 900;
 	font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 * {
-	font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+	font-family: 'PatrickHand', Arial, Helvetica, sans-serif;
 	animation-duration: 0.5s;
 	transition-duration: 0.5s;
 }
@@ -118,6 +118,7 @@ nav {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		margin-top: 1rem;
 		gap: 0.5rem;
 
 		img[alt="steam"] {
@@ -140,8 +141,8 @@ nav {
 
 	div#tagline {
 		color: rgb(246, 109, 130);
-		font-family: 'Dokdo', Arial, Helvetica, sans-serif;
-		font-size: 1.2rem;
+		/* font-family: 'Dokdo', Arial, Helvetica, sans-serif; */
+		/* font-size: 1.2rem; */
 		text-align: center;
 	}
 
@@ -160,7 +161,7 @@ nav {
 		max-width: 650px;
 		aspect-ratio: 16/9;
 		overflow: hidden;
-		border: 1px solid red;
+		border: 4px dashed rgb(246, 109, 130);
 		margin: 1rem;
 
 		iframe {
@@ -204,7 +205,34 @@ nav {
 
 #pitch {
 	background-color: #7486ce;
+
+	h2 {
+		font-size: 3.5rem;
+		text-align: center;
+		text-decoration: dashed underline #0d549a;
+		text-decoration-thickness: 4px;
+	}
+
+	div.pitch {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 80%;
+		max-width: 650px;
+		aspect-ratio: 16/9;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 4px dashed #0d549a;
+		}
+	}
 }
+
+/* <div class="pitch" style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
+			<iframe src="https://www.canva.com/design/DAG3ea4_pr8/view?embed"
+				style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;" allowfullscreen></iframe>
+		</div> */
 
 #pre-pro {
 	background:
