@@ -144,6 +144,8 @@ nav {
 	div#tagline {
 		color: rgb(246, 109, 130);
 		text-align: center;
+		font-family: 'Dokdo', Arial, Helvetica, sans-serif;
+		font-size: 2.5rem;
 	}
 
 	div#release,
