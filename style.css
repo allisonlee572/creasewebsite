@@ -202,13 +202,19 @@ nav {
 }
 
 #pitch {
-	background-color: #7486ce;
+	background-color: #90a1e6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 0;
+	justify-content: center;
 
 	h2 {
 		font-size: 3.5rem;
 		text-align: center;
 		text-decoration: dashed underline #0d549a;
 		text-decoration-thickness: 4px;
+		z-index: 10;
 	}
 
 	div.pitch {
@@ -217,6 +223,75 @@ nav {
 		position: relative;
 		width: 90%;
 		max-width: 850px;
+		z-index: 10;
+	}
+
+	.pitch-link {
+		background:
+			linear-gradient(rgba(230, 150, 162, 0.355), rgba(255, 182, 193, 0.25)),
+			url("img/paper1.jpg") center/cover no-repeat;
+
+		margin-top: 1rem;
+		width: fit-content;
+		padding: 0.5rem 1rem;
+		transform: rotate(-2deg);
+		box-shadow: 10px 10px 5px #02031e49;
+		z-index: 10;
+
+		a {
+			font-size: 2rem;
+
+			&:visited {
+				color: #0d549a;
+			}
+		}
+
+		&:hover {
+			transform: translateY(-5px) scale(1.2);
+			filter: brightness(1.1);
+			box-shadow: 15px 25px 5px #02031e30;
+		}
+	}
+
+	.decor {
+		position: absolute;
+
+		&.waves {
+			bottom: 0;
+			min-height: 5rem;
+		}
+
+		&.cloud {
+			animation: cloudMove linear infinite;
+
+			&.a {
+				top: 7vh;
+				animation-delay: 0s;
+				animation-duration: 30s;
+			}
+
+			&.b {
+				top: 30vh;
+				transform: translateY(-50%);
+				animation-delay: -4s;
+				animation-duration: 75s;
+			}
+
+			&.c {
+				top: 60vh;
+				animation-delay: -6s;
+				animation-duration: 50s;
+			}
+		}
+	}
+}
+
+@keyframes cloudMove {
+	from {
+		transform: translatex(-100vw);
+	}
+	to {
+		transform: translatex(100vw);
 	}
 }
 
