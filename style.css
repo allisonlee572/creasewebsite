@@ -120,6 +120,7 @@ nav {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		max-height: 95%;
 		margin-top: 1rem;
 		gap: 0.5rem;
 
@@ -139,6 +140,7 @@ nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-grow: 1;
 	}
 
 	div#tagline {
@@ -178,9 +180,13 @@ nav {
 	div.game-info {
 		padding-bottom: 3rem;
 		gap: 0.5rem;
+		min-height: 0;
 
 		#about-game {
 			transform: rotate(1deg);
+			flex-grow: 1;
+			min-height: 0;
+			overflow: scroll;
 		}
 	}
 
@@ -219,20 +225,24 @@ nav {
 			left: 5vw;
 			translate: 0 -5%;
 		}
+
 		&.b {
 			animation-delay: -4s;
 			left: 15vw;
 			translate: 0 -35%;
 		}
+
 		&.c {
 			animation-delay: -8s;
 			right: 20vw;
 			translate: 0 -55%;
 		}
+
 		&.d {
 			animation-delay: -6s;
 			right: 15vw;
 		}
+
 		&.e {
 			animation-delay: -2s;
 			right: 5vw;
@@ -258,7 +268,8 @@ nav {
 		transform: rotate(-3deg);
 	}
 
-	20%, 100% {
+	20%,
+	100% {
 		transform: rotate(0deg);
 	}
 }
